@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Random Number Generator"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        android:paddingTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roman_editText"
+        android:hint="Enter a roman number"
+        android:inputType="text"
+        android:paddingTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/interger_editText"
+        android:hint="Enter an interger number"
+        android:inputType="text"
+        android:paddingTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/solution_roman"
+        android:paddingTop="40dp"
+        android:inputType="text"
+        android:text="Solution for Roman"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/solution_decimal"
+        android:paddingTop="40dp"
+        android:text="Solution for decimal"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:text="Decimal"/>
+
+    <Button
+        android:id="@+id/btn_submit_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:layout_toEndOf="@id/btn_submit"
+        android:text="Roman" />
+</RelativeLayout>
+
+</LinearLayout>
